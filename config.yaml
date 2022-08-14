@@ -1,4 +1,4 @@
-pprof: true
+pprof: false
 
 repeat-save: false
 
