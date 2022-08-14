@@ -1,0 +1,18 @@
+[Unit]
+Description=tagen
+  
+[Service]
+Type=simple
+WorkingDirectory=/root
+ExecStart=/root/tron-address-gen
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+
+# /etc/systemd/system/tagen.service
+# chmod +x /etc/systemd/system/tagen.service
+# sudo systemctl daemon-reload
+# sudo systemctl start tagen
+# sudo systemctl enable tagen
